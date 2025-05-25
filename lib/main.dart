@@ -1,5 +1,18 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(Text('Hello Flutter', textDirection: TextDirection.ltr));
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(centerTitle: true, title: Text('Home Page')),
+        body: Center(
+          child: Text(
+            'Hello, Flutter',
+            style: TextStyle(fontSize: 30.0),
+            textDirection: TextDirection.ltr,
+          ),
+        ),
+      ),
+    ),
+  );
 }
